@@ -41,3 +41,7 @@ License
 
 Code is under the MIT license.
 
+
+------
+
+[@neoneye](http://twitter.com/neoneye)
