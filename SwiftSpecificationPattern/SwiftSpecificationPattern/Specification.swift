@@ -15,8 +15,6 @@ protocol Specification {
 }
 
 class CompositeSpecification: Specification {
-	// TODO: how to make abstract method / pure virtual?
-	//	abstract func isSatisfiedBy(candidate : AnyObject) -> Bool
 	func isSatisfiedBy(candidate: AnyObject) -> Bool {
 		// subclass must implement this method
 		return false
