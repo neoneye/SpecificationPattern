@@ -7,10 +7,22 @@ The **Specification** design pattern implemented in swift.
 
 Source: [wikipedia](http://en.wikipedia.org/wiki/Specification_pattern)
 
+Example - Live text validation
+------------------------------
+
+![](example0.gif)
+
+The coloring are like this:
+
+1. Red, when the text neither can be "taylor" nor "swift"
+2. White, when the text is partially matching either "taylor" or "swift"
+3. Green, when the text is exactly "taylor" or exactly "swift".
+
+You find this in the Basic_iOS project in the Examples folder.
 
 
-Example of use
---------------
+Example - Invoice handling
+--------------------------
 
 In the following example, we are retrieving invoices and sending them to a collection agency if
 
