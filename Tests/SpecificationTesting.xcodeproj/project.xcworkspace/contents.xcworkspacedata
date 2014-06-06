@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftSpecificationPattern.xcodeproj">
+      location = "self:SpecificationTesting.xcodeproj">
    </FileRef>
 </Workspace>

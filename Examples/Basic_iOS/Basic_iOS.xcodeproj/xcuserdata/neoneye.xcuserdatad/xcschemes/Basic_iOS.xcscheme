@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42DA67C3193F81C600FB8100"
-               BuildableName = "SwiftSpecificationPattern.app"
-               BlueprintName = "SwiftSpecificationPattern"
-               ReferencedContainer = "container:SwiftSpecificationPattern.xcodeproj">
+               BlueprintIdentifier = "42E1B7A819422EFC0022E796"
+               BuildableName = "Basic_iOS.app"
+               BlueprintName = "Basic_iOS"
+               ReferencedContainer = "container:Basic_iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42DA67D5193F81C600FB8100"
-               BuildableName = "SwiftSpecificationPatternTests.xctest"
-               BlueprintName = "SwiftSpecificationPatternTests"
-               ReferencedContainer = "container:SwiftSpecificationPattern.xcodeproj">
+               BlueprintIdentifier = "42E1B7BA19422EFC0022E796"
+               BuildableName = "Basic_iOSTests.xctest"
+               BlueprintName = "Basic_iOSTests"
+               ReferencedContainer = "container:Basic_iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42E1B7D419422F510022E796"
+               BuildableName = "Basic_iOSTests copy.xctest"
+               BlueprintName = "Basic_iOSTests copy"
+               ReferencedContainer = "container:Basic_iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42DA67C3193F81C600FB8100"
-            BuildableName = "SwiftSpecificationPattern.app"
-            BlueprintName = "SwiftSpecificationPattern"
-            ReferencedContainer = "container:SwiftSpecificationPattern.xcodeproj">
+            BlueprintIdentifier = "42E1B7A819422EFC0022E796"
+            BuildableName = "Basic_iOS.app"
+            BlueprintName = "Basic_iOS"
+            ReferencedContainer = "container:Basic_iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +71,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42DA67C3193F81C600FB8100"
-            BuildableName = "SwiftSpecificationPattern.app"
-            BlueprintName = "SwiftSpecificationPattern"
-            ReferencedContainer = "container:SwiftSpecificationPattern.xcodeproj">
+            BlueprintIdentifier = "42E1B7A819422EFC0022E796"
+            BuildableName = "Basic_iOS.app"
+            BlueprintName = "Basic_iOS"
+            ReferencedContainer = "container:Basic_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +89,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42DA67C3193F81C600FB8100"
-            BuildableName = "SwiftSpecificationPattern.app"
-            BlueprintName = "SwiftSpecificationPattern"
-            ReferencedContainer = "container:SwiftSpecificationPattern.xcodeproj">
+            BlueprintIdentifier = "42E1B7A819422EFC0022E796"
+            BuildableName = "Basic_iOS.app"
+            BlueprintName = "Basic_iOS"
+            ReferencedContainer = "container:Basic_iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

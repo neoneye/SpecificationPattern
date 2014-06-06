@@ -1,6 +1,5 @@
 //
-//  SwiftSpecificationPatternTests.swift
-//  SwiftSpecificationPatternTests
+//  Tests.swift
 //
 //  Created by Simon Strandgaard on 04/06/14.
 //  Copyright (c) 2014 None. All rights reserved.
@@ -8,7 +7,7 @@
 
 import XCTest
 
-class SwiftSpecificationPatternTests: XCTestCase {
+class Tests: XCTestCase {
     
 	func testSimple() {
 		let spec = RegexSpecification.pattern("^\\d+$")
