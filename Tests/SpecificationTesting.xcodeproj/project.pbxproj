@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42E1B809194240AD0022E796 /* RegexSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B807194240AD0022E796 /* RegexSpecification.swift */; };
-		42E1B80A194240AD0022E796 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B808194240AD0022E796 /* Specification.swift */; };
+		42B7F33F19479AC200CBB434 /* RegexSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegexSpecification.swift */; };
+		42B7F34019479AC200CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
 		42E1B80E194241AD0022E796 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42B7F33D19479AC200CBB434 /* RegexSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexSpecification.swift; sourceTree = "<group>"; };
+		42B7F33E19479AC200CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42E1B7FD194240A00022E796 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42E1B807194240AD0022E796 /* RegexSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexSpecification.swift; sourceTree = "<group>"; };
-		42E1B808194240AD0022E796 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42E1B80D194241AD0022E796 /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		42E1B80F194241B90022E796 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -31,12 +31,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B7F33C19479AC200CBB434 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42B7F33D19479AC200CBB434 /* RegexSpecification.swift */,
+				42B7F33E19479AC200CBB434 /* Specification.swift */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
 		42E1B7E6194240640022E796 = {
 			isa = PBXGroup;
 			children = (
 				42E1B80F194241B90022E796 /* Info.plist */,
 				42E1B80D194241AD0022E796 /* Tests.swift */,
-				42E1B806194240AD0022E796 /* Source */,
+				42B7F33C19479AC200CBB434 /* Classes */,
 				42E1B7F0194240640022E796 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,16 +57,6 @@
 				42E1B7FD194240A00022E796 /* Tests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		42E1B806194240AD0022E796 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				42E1B807194240AD0022E796 /* RegexSpecification.swift */,
-				42E1B808194240AD0022E796 /* Specification.swift */,
-			);
-			name = Source;
-			path = ../Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +125,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E1B80A194240AD0022E796 /* Specification.swift in Sources */,
-				42E1B809194240AD0022E796 /* RegexSpecification.swift in Sources */,
+				42B7F34019479AC200CBB434 /* Specification.swift in Sources */,
 				42E1B80E194241AD0022E796 /* Tests.swift in Sources */,
+				42B7F33F19479AC200CBB434 /* RegexSpecification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
