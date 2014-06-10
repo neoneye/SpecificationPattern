@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4250D83D1947BA2600537779 /* CharacterSetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */; };
 		42B7F34419479AE500CBB434 /* RegexSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F34219479AE500CBB434 /* RegexSpecification.swift */; };
 		42B7F34519479AE500CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F34319479AE500CBB434 /* Specification.swift */; };
 		42E1B7AF19422EFC0022E796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B7AE19422EFC0022E796 /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetSpecification.swift; sourceTree = "<group>"; };
 		42B7F34219479AE500CBB434 /* RegexSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexSpecification.swift; sourceTree = "<group>"; };
 		42B7F34319479AE500CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42E1B7A919422EFC0022E796 /* Basic_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +42,7 @@
 		42B7F34119479AE500CBB434 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */,
 				42B7F34219479AE500CBB434 /* RegexSpecification.swift */,
 				42B7F34319479AE500CBB434 /* Specification.swift */,
 			);
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4250D83D1947BA2600537779 /* CharacterSetSpecification.swift in Sources */,
 				42E1B7B119422EFC0022E796 /* ViewController.swift in Sources */,
 				42E1B7AF19422EFC0022E796 /* AppDelegate.swift in Sources */,
 				42B7F34419479AE500CBB434 /* RegexSpecification.swift in Sources */,
