@@ -23,7 +23,7 @@ class RegexSpecification: CompositeSpecification {
 		return RegexSpecification(regex : regex)
 	}
 	
-	override func isSatisfiedBy(candidate: AnyObject) -> Bool {
+	override func isSatisfiedBy(candidate: Any) -> Bool {
 		if !(candidate is String) {
 			return false
 		}

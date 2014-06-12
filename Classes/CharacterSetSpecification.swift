@@ -87,7 +87,7 @@ class CharacterSetSpecification: CompositeSpecification {
 	}
 
 	
-	override func isSatisfiedBy(candidate: AnyObject) -> Bool {
+	override func isSatisfiedBy(candidate: Any) -> Bool {
 		if !(candidate is String) {
 			return false
 		}
