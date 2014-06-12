@@ -13,6 +13,8 @@
 		4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83A1947B98A00537779 /* AdvancedTests.swift */; };
 		42B7F33F19479AC200CBB434 /* RegexSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegexSpecification.swift */; };
 		42B7F34019479AC200CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
+		42C69FC8194A01F30017DFAB /* LambdaSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC7194A01F30017DFAB /* LambdaSpecification.swift */; };
+		42C69FCA194A023C0017DFAB /* LambaSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC9194A023C0017DFAB /* LambaSpecificationTests.swift */; };
 		42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* SpecificationTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		4250D83A1947B98A00537779 /* AdvancedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedTests.swift; sourceTree = "<group>"; };
 		42B7F33D19479AC200CBB434 /* RegexSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexSpecification.swift; sourceTree = "<group>"; };
 		42B7F33E19479AC200CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		42C69FC7194A01F30017DFAB /* LambdaSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LambdaSpecification.swift; sourceTree = "<group>"; };
+		42C69FC9194A023C0017DFAB /* LambaSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LambaSpecificationTests.swift; sourceTree = "<group>"; };
 		42E1B7FD194240A00022E796 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E1B80D194241AD0022E796 /* SpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificationTests.swift; sourceTree = "<group>"; };
 		42E1B80F194241B90022E796 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				4250D8341947B5D000537779 /* CharacterSetSpecification.swift */,
+				42C69FC7194A01F30017DFAB /* LambdaSpecification.swift */,
 				42B7F33D19479AC200CBB434 /* RegexSpecification.swift */,
 				42B7F33E19479AC200CBB434 /* Specification.swift */,
 			);
@@ -56,6 +61,7 @@
 				42E1B80F194241B90022E796 /* Info.plist */,
 				4250D83A1947B98A00537779 /* AdvancedTests.swift */,
 				4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */,
+				42C69FC9194A023C0017DFAB /* LambaSpecificationTests.swift */,
 				4250D8381947B93400537779 /* RegexSpecificationTests.swift */,
 				42E1B80D194241AD0022E796 /* SpecificationTests.swift */,
 				42B7F33C19479AC200CBB434 /* Classes */,
@@ -139,10 +145,12 @@
 			files = (
 				4250D8351947B5D000537779 /* CharacterSetSpecification.swift in Sources */,
 				42B7F34019479AC200CBB434 /* Specification.swift in Sources */,
+				42C69FCA194A023C0017DFAB /* LambaSpecificationTests.swift in Sources */,
 				42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */,
 				4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */,
 				4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */,
 				42B7F33F19479AC200CBB434 /* RegexSpecification.swift in Sources */,
+				42C69FC8194A01F30017DFAB /* LambdaSpecification.swift in Sources */,
 				4250D8391947B93400537779 /* RegexSpecificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 		4250D83D1947BA2600537779 /* CharacterSetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */; };
 		42B7F34419479AE500CBB434 /* RegexSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F34219479AE500CBB434 /* RegexSpecification.swift */; };
 		42B7F34519479AE500CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F34319479AE500CBB434 /* Specification.swift */; };
+		42C69FCC194A08D40017DFAB /* LambdaSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FCB194A08D40017DFAB /* LambdaSpecification.swift */; };
 		42E1B7AF19422EFC0022E796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B7AE19422EFC0022E796 /* AppDelegate.swift */; };
 		42E1B7B119422EFC0022E796 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B7B019422EFC0022E796 /* ViewController.swift */; };
 		42E1B7B419422EFC0022E796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E1B7B219422EFC0022E796 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetSpecification.swift; sourceTree = "<group>"; };
 		42B7F34219479AE500CBB434 /* RegexSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexSpecification.swift; sourceTree = "<group>"; };
 		42B7F34319479AE500CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		42C69FCB194A08D40017DFAB /* LambdaSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LambdaSpecification.swift; sourceTree = "<group>"; };
 		42E1B7A919422EFC0022E796 /* Basic_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basic_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E1B7AD19422EFC0022E796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42E1B7AE19422EFC0022E796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */,
+				42C69FCB194A08D40017DFAB /* LambdaSpecification.swift */,
 				42B7F34219479AE500CBB434 /* RegexSpecification.swift */,
 				42B7F34319479AE500CBB434 /* Specification.swift */,
 			);
@@ -160,6 +163,7 @@
 				42E1B7B119422EFC0022E796 /* ViewController.swift in Sources */,
 				42E1B7AF19422EFC0022E796 /* AppDelegate.swift in Sources */,
 				42B7F34419479AE500CBB434 /* RegexSpecification.swift in Sources */,
+				42C69FCC194A08D40017DFAB /* LambdaSpecification.swift in Sources */,
 				42B7F34519479AE500CBB434 /* Specification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
