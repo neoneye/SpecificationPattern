@@ -1,7 +1,7 @@
-swift-specification-pattern
-===========================
+SpecificationPattern
+====================
 
-The **Specification** design pattern implemented in swift.
+The **Specification** design pattern implemented in swift for iOS/OSX.
 
 > In computer programming, the specification pattern is a particular software design pattern, whereby business rules can be recombined by chaining the business rules together using boolean logic.
 
