@@ -24,9 +24,6 @@ class RegexSpecification: CompositeSpecification {
 	}
 	
 	override func isSatisfiedBy(candidate: Any) -> Bool {
-		if !(candidate is String) {
-			return false
-		}
 		if let s = candidate as? String {
 			return regex.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, countElements(s))) > 0
 		}

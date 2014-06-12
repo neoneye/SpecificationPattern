@@ -21,9 +21,6 @@ class LambdaSpecification<T>: CompositeSpecification {
 	}
 	
 	override func isSatisfiedBy(candidate: Any) -> Bool {
-		if !(candidate is T) {
-			return false
-		}
 		if let obj = candidate as? T {
 			return lambda(obj)
 		}
