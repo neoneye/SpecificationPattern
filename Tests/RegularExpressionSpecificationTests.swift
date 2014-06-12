@@ -1,9 +1,9 @@
 import XCTest
 
-class RegexSpecificationTests: XCTestCase {
+class RegularExpressionSpecificationTests: XCTestCase {
 	
 	func testSimple() {
-		let spec = RegexSpecification.pattern("^\\d+$")
+		let spec = RegularExpressionSpecification.pattern("^\\d+$")
 		XCTAssertTrue(spec.isSatisfiedBy("123"))
 		XCTAssertFalse(spec.isSatisfiedBy("abc"))
 	}

@@ -28,14 +28,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	}
 	
 	class func createValidSpecification() -> Specification {
-		let spec0 = RegexSpecification.pattern("^taylor$")
-		let spec1 = RegexSpecification.pattern("^swift$")
+		let spec0 = RegularExpressionSpecification.pattern("^taylor$")
+		let spec1 = RegularExpressionSpecification.pattern("^swift$")
 		return spec0.or(spec1)
 	}
 	
 	class func createPartialSpecification() -> Specification {
-		let spec0 = RegexSpecification.pattern("^t?a?y?l?o?r?$")
-		let spec1 = RegexSpecification.pattern("^s?w?i?f?t?$")
+		let spec0 = RegularExpressionSpecification.pattern("^t?a?y?l?o?r?$")
+		let spec1 = RegularExpressionSpecification.pattern("^s?w?i?f?t?$")
 		return spec0.or(spec1)
 	}
 	
