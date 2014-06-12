@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SpecificationPattern"
-  s.version      = "1.0.0"
+  s.version      = "0.8.0"
   s.summary      = "The Specification pattern implemented in swift"
   s.description  = <<-DESC
                    Business logic is the heartbeat of our applications.
