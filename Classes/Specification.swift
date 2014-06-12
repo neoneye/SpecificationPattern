@@ -1,12 +1,3 @@
-//
-// Specification Pattern
-// http://en.wikipedia.org/wiki/Specification_pattern
-//
-// Created by Simon Strandgaard on 04/06/14.
-// Copyright (c) 2014 Simon Strandgaard. All rights reserved.
-// MIT license.
-//
-
 protocol Specification {
 	func isSatisfiedBy(candidate: Any) -> Bool
 	func and(other: Specification) -> Specification

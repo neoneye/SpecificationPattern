@@ -1,11 +1,3 @@
-//
-// RegexSpecification
-//
-// Created by Simon Strandgaard on 04/06/14.
-// Copyright (c) 2014 Simon Strandgaard. All rights reserved.
-// MIT license.
-//
-
 import Foundation
 
 class RegexSpecification: CompositeSpecification {
