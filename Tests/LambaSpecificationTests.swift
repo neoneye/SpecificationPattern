@@ -3,7 +3,7 @@ import XCTest
 class LambdaSpecificationTests: XCTestCase {
 	
 	func testString0() {
-		let spec = LambdaSpecification.lambda({ (candidate: String) -> Bool in
+		let spec = LambdaSpecification({ (candidate: String) -> Bool in
 			return candidate.hasPrefix("hello");
 			});
 		XCTAssertTrue(spec.isSatisfiedBy("hello world"))
@@ -16,7 +16,7 @@ class LambdaSpecificationTests: XCTestCase {
 	}
 	
 	func testInteger0() {
-		let spec = LambdaSpecification.lambda({ (candidate: Int) -> Bool in
+		let spec = LambdaSpecification({ (candidate: Int) -> Bool in
 			return candidate > 5;
 			})
 		XCTAssertTrue(spec.isSatisfiedBy(10))
@@ -34,7 +34,7 @@ class LambdaSpecificationTests: XCTestCase {
 			}
 		}
 		
-		let spec = LambdaSpecification.lambda({ (candidate: Customer) -> Bool in
+		let spec = LambdaSpecification({ (candidate: Customer) -> Bool in
 			return candidate.name.hasPrefix("john");
 			})
 		XCTAssertTrue(spec.isSatisfiedBy(Customer(name: "john doe")))

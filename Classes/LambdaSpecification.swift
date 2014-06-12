@@ -8,10 +8,6 @@ class LambdaSpecification<T>: CompositeSpecification {
 		super.init()
 	}
 	
-	class func lambda(lambda: T -> Bool) -> LambdaSpecification {
-		return LambdaSpecification(lambda)
-	}
-	
 	override func isSatisfiedBy(candidate: Any) -> Bool {
 		if let obj = candidate as? T {
 			return lambda(obj)
