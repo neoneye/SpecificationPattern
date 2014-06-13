@@ -8,6 +8,11 @@ class CharacterSetSpecification: CompositeSpecification {
 		super.init()
 	}
 	
+	class func charactersInString(charactersInString: String) -> CharacterSetSpecification {
+		let cs = NSCharacterSet(charactersInString: charactersInString)
+		return CharacterSetSpecification(characterSet: cs)
+	}
+	
 	class func controlCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.controlCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
