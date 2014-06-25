@@ -1,11 +1,11 @@
 import XCTest
 
-class LambdaSpecificationTests: XCTestCase {
+class PredicateSpecificationTests: XCTestCase {
 	
 	func testString0() {
-		let spec = LambdaSpecification({ (candidate: String) -> Bool in
-			return candidate.hasPrefix("hello");
-			});
+		let spec = PredicateSpecification { (candidate: String) -> Bool in
+			return candidate.hasPrefix("hello")
+		}
 		XCTAssertTrue(spec.isSatisfiedBy("hello world"))
 		XCTAssertTrue(spec.isSatisfiedBy("hello lambda world"))
 		XCTAssertFalse(spec.isSatisfiedBy("hell"))
@@ -16,9 +16,9 @@ class LambdaSpecificationTests: XCTestCase {
 	}
 	
 	func testInteger0() {
-		let spec = LambdaSpecification({ (candidate: Int) -> Bool in
-			return candidate > 5;
-			})
+		let spec = PredicateSpecification { (candidate: Int) -> Bool in
+			return candidate > 5
+		}
 		XCTAssertTrue(spec.isSatisfiedBy(10))
 		XCTAssertFalse(spec.isSatisfiedBy(0))
 		XCTAssertFalse(spec.isSatisfiedBy("not integer"))
@@ -34,9 +34,9 @@ class LambdaSpecificationTests: XCTestCase {
 			}
 		}
 		
-		let spec = LambdaSpecification({ (candidate: Customer) -> Bool in
-			return candidate.name.hasPrefix("john");
-			})
+		let spec = PredicateSpecification { (candidate: Customer) -> Bool in
+			return candidate.name.hasPrefix("john")
+		}
 		XCTAssertTrue(spec.isSatisfiedBy(Customer(name: "john doe")))
 		XCTAssertFalse(spec.isSatisfiedBy(Customer(name: "jane doe")))
 		XCTAssertFalse(spec.isSatisfiedBy(0))
