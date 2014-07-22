@@ -37,7 +37,7 @@ This example is meant to show the end result of how the logic is 'chained' toget
 	let inCollection = InCollectionSpecification()
  
 	// example of specification pattern logic chaining
-	let sendToCollection = overDue.and(noticeSent).and(inCollection.not())
+	let sendToCollection = overDue & noticeSent & !inCollection
  
 	let invoiceCollection = Service.invoices()
 	for invoice in invoiceCollection {
