@@ -9,6 +9,8 @@ Source: [wikipedia](http://en.wikipedia.org/wiki/Specification_pattern)
 
 ## Usage
 
+Chain two specifications into a single specification.
+
 	let s0 = RegularExpressionSpecification(pattern: "hello.*world")
 	let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
 	let spec = s0 & s1
@@ -28,6 +30,34 @@ Beyond the specification pattern itself, this project provides the following iOS
 * CharacterSetSpecification - for ensuring all characters in a string are of a certain kind, eg. all digits
 * PredicateSpecification - if you don't want to subclass you can use this and instead provide a closure 
 * RegularExpressionSpecification - useful for string matching
+
+
+## Operators
+
+#### And operator
+
+Use the `&` operator when two specifications both must be satisfied.
+
+
+#### Or operator
+
+Use the `|` operator when one of two specifications must be satisfied.
+
+
+#### Not operator
+
+Use the `!` operator when a specifications must not be satisfied.
+
+
+#### Equal operator
+
+Use the `==` operator to check if a candidate object satisfies the specification.
+
+
+#### Not equal operator
+
+Use the `!=` operator to check if a candidate object doesn't satisfy the specification.
+
 
 
 ## Example - Invoice handling
