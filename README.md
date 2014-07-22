@@ -7,18 +7,30 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 
 Source: [wikipedia](http://en.wikipedia.org/wiki/Specification_pattern)
 
-Example - Live text validation
-------------------------------
 
-![](example0.gif)
+Usage
+-----
 
-The coloring are like this:
+	let s0 = RegularExpressionSpecification(pattern: "hello.*world")
+	let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
+	let spec = s0 & s1
+		
+	spec == "42"
+	# false, doesn't satify s0 and s1
+	spec == "hello world"
+	# false, s0 is satisfied, but not s1
+	spec == "say hello to the world today"
+	# true
 
-1. Red, when the text neither can be "taylor" nor "swift"
-2. White, when the text is partially matching either "taylor" or "swift"
-3. Green, when the text is exactly "taylor" or exactly "swift".
 
-You find this in the Basic_iOS project in the Examples folder.
+Useful classes
+--------------
+
+Beyond the specification pattern itself, this project provides the following iOS/OSX specifications
+
+* CharacterSetSpecification - for ensuring all characters in a string are of a certain kind, eg. all digits
+* PredicateSpecification - if you don't want to subclass you can use this and instead provide a closure 
+* RegularExpressionSpecification - useful for string matching
 
 
 Example - Invoice handling
@@ -46,6 +58,20 @@ This example is meant to show the end result of how the logic is 'chained' toget
 	    }
 	}
 	
+
+
+Sample project - Live text validation
+------------------------------
+
+![](example0.gif)
+
+The coloring are like this:
+
+1. Red, when the text neither can be "taylor" nor "swift"
+2. White, when the text is partially matching either "taylor" or "swift"
+3. Green, when the text is exactly "taylor" or exactly "swift".
+
+You find this in the Basic_iOS project in the Examples folder.
 
 
 License
