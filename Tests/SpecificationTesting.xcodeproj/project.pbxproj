@@ -11,12 +11,12 @@
 		4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */; };
 		4250D8391947B93400537779 /* RegularExpressionSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */; };
 		4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83A1947B98A00537779 /* AdvancedTests.swift */; };
+		428F9FEB197E7FC700D327EC /* OperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEA197E7FC700D327EC /* OperatorTests.swift */; };
+		428F9FED197E7FDC00D327EC /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEC197E7FDC00D327EC /* Operator.swift */; };
 		42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */; };
 		42B7F34019479AC200CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
 		42C69FC8194A01F30017DFAB /* PredicateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */; };
 		42C69FCA194A023C0017DFAB /* PredicateSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */; };
-		42C69FCE194A0FD60017DFAB /* Experimental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FCD194A0FD60017DFAB /* Experimental.swift */; };
-		42C69FD0194A12140017DFAB /* ExperimentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FCF194A12140017DFAB /* ExperimentalTests.swift */; };
 		42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* SpecificationTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,12 +25,12 @@
 		4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetSpecificationTests.swift; sourceTree = "<group>"; };
 		4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecificationTests.swift; sourceTree = "<group>"; };
 		4250D83A1947B98A00537779 /* AdvancedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedTests.swift; sourceTree = "<group>"; };
+		428F9FEA197E7FC700D327EC /* OperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorTests.swift; sourceTree = "<group>"; };
+		428F9FEC197E7FDC00D327EC /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecification.swift; sourceTree = "<group>"; };
 		42B7F33E19479AC200CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateSpecification.swift; sourceTree = "<group>"; };
 		42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateSpecificationTests.swift; sourceTree = "<group>"; };
-		42C69FCD194A0FD60017DFAB /* Experimental.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experimental.swift; sourceTree = "<group>"; };
-		42C69FCF194A12140017DFAB /* ExperimentalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperimentalTests.swift; sourceTree = "<group>"; };
 		42E1B7FD194240A00022E796 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E1B80D194241AD0022E796 /* SpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificationTests.swift; sourceTree = "<group>"; };
 		42E1B80F194241B90022E796 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				4250D8341947B5D000537779 /* CharacterSetSpecification.swift */,
+				428F9FEC197E7FDC00D327EC /* Operator.swift */,
 				42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */,
 				42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */,
 				42B7F33E19479AC200CBB434 /* Specification.swift */,
@@ -65,9 +66,8 @@
 				42B7F33C19479AC200CBB434 /* Classes */,
 				4250D83A1947B98A00537779 /* AdvancedTests.swift */,
 				4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */,
-				42C69FCD194A0FD60017DFAB /* Experimental.swift */,
-				42C69FCF194A12140017DFAB /* ExperimentalTests.swift */,
 				42E1B80F194241B90022E796 /* Info.plist */,
+				428F9FEA197E7FC700D327EC /* OperatorTests.swift */,
 				42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */,
 				4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */,
 				42E1B80D194241AD0022E796 /* SpecificationTests.swift */,
@@ -152,9 +152,9 @@
 				4250D8351947B5D000537779 /* CharacterSetSpecification.swift in Sources */,
 				42B7F34019479AC200CBB434 /* Specification.swift in Sources */,
 				42C69FCA194A023C0017DFAB /* PredicateSpecificationTests.swift in Sources */,
-				42C69FCE194A0FD60017DFAB /* Experimental.swift in Sources */,
+				428F9FEB197E7FC700D327EC /* OperatorTests.swift in Sources */,
 				42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */,
-				42C69FD0194A12140017DFAB /* ExperimentalTests.swift in Sources */,
+				428F9FED197E7FDC00D327EC /* Operator.swift in Sources */,
 				4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */,
 				4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */,
 				42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */,

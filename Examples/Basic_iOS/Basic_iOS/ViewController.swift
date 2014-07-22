@@ -30,13 +30,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	class func createValidSpecification() -> Specification {
 		let spec0 = RegularExpressionSpecification(pattern: "^taylor$")
 		let spec1 = RegularExpressionSpecification(pattern: "^swift$")
-		return spec0.or(spec1)
+		return spec0 | spec1
 	}
 	
 	class func createPartialSpecification() -> Specification {
 		let spec0 = RegularExpressionSpecification(pattern: "^t?a?y?l?o?r?$")
 		let spec1 = RegularExpressionSpecification(pattern: "^s?w?i?f?t?$")
-		return spec0.or(spec1)
+		return spec0 | spec1
 	}
 	
 	override func viewDidLoad() {
@@ -66,11 +66,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		if text == nil {
 			return
 		}
-		if validSpecification.isSatisfiedBy(text!) {
+		if validSpecification == text {
 			textField.backgroundColor = UIColor.greenColor()
 			return
 		}
-		if partialSpecification.isSatisfiedBy(text!) {
+		if partialSpecification == text {
 			textField.backgroundColor = UIColor.whiteColor()
 			return
 		}

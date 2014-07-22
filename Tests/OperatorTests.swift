@@ -1,6 +1,6 @@
 import XCTest
 
-class ExperimentalTests: XCTestCase {
+class OperatorTests: XCTestCase {
 	
 	func testOperator0() {
 		/*
