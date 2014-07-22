@@ -1,5 +1,4 @@
-SpecificationPattern
-====================
+# SpecificationPattern
 
 The **Specification** design pattern implemented in swift for iOS/OSX.
 
@@ -8,8 +7,7 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 Source: [wikipedia](http://en.wikipedia.org/wiki/Specification_pattern)
 
 
-Usage
------
+## Usage
 
 	let s0 = RegularExpressionSpecification(pattern: "hello.*world")
 	let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
@@ -23,8 +21,7 @@ Usage
 	# true
 
 
-Useful classes
---------------
+## Useful classes
 
 Beyond the specification pattern itself, this project provides the following iOS/OSX specifications
 
@@ -33,8 +30,7 @@ Beyond the specification pattern itself, this project provides the following iOS
 * RegularExpressionSpecification - useful for string matching
 
 
-Example - Invoice handling
---------------------------
+## Example - Invoice handling
 
 In the following example, we are retrieving invoices and sending them to a collection agency if
 
@@ -60,8 +56,7 @@ This example is meant to show the end result of how the logic is 'chained' toget
 	
 
 
-Sample project - Live text validation
-------------------------------
+## Sample project - Live text validation
 
 ![](example0.gif)
 
@@ -74,12 +69,10 @@ The coloring are like this:
 You find this in the Basic_iOS project in the Examples folder.
 
 
-License
--------
+## Contributing
 
-Code is under the MIT license.
-
-
-------
-
-[@neoneye](http://twitter.com/neoneye)
+1. Fork it
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create new Pull Request
