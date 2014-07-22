@@ -1,14 +1,5 @@
 /*
-
-!!!!!!!!!!! Warning: this is experimental code !!!!!!!!!!!!!
-
-I have tried the &|! operator overloading in swift, but it's somewhat buggy.
-So don't rely on the operator overloading just yet!
-
-*/
-
-/*
-and operator - shorthand for .and()
+And operator - shorthand for .and()
 
 USAGE:
 let spec = onlyDigits & between2And4Letters & modulus13Checksum
@@ -18,7 +9,7 @@ let spec = onlyDigits & between2And4Letters & modulus13Checksum
 }
 
 /*
-or operator - shorthand for .or()
+Or operator - shorthand for .or()
 
 USAGE:
 let spec = connectionTypeWifi | connectionType4G | hasOfflineData
@@ -28,11 +19,26 @@ let spec = connectionTypeWifi | connectionType4G | hasOfflineData
 }
 
 /*
-negate operator - shorthand for .not()
+Negate operator - shorthand for .not()
 
 USAGE:
 let spec = ! filesystemIsFull
 */
 @prefix func ! (specification: Specification) -> Specification {
 	return specification.not()
+}
+
+
+/*
+Equivalence operators - shorthand for .isSatisfiedBy()
+
+USAGE:
+spec == "123"
+spec != "123"
+*/
+@infix func == (left: Specification, right: Any?) -> Bool {
+	return left.isSatisfiedBy(right)
+}
+@infix func != (left: Specification, right: Any?) -> Bool {
+	return !left.isSatisfiedBy(right)
 }

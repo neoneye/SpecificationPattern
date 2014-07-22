@@ -15,13 +15,21 @@ class ExperimentalTests: XCTestCase {
 		
 		let spec = onlyDigits & between2And4Letters & !twoZeroes
 		
-		XCTAssertTrue(spec.isSatisfiedBy("42"))
-		XCTAssertTrue(spec.isSatisfiedBy("0123"))
-		XCTAssertTrue(spec.isSatisfiedBy("666"))
-		XCTAssertFalse(spec.isSatisfiedBy("ice"))
-		XCTAssertFalse(spec.isSatisfiedBy("too long"))
-		XCTAssertFalse(spec.isSatisfiedBy("00"))
-		XCTAssertFalse(spec.isSatisfiedBy("1010"))
+		XCTAssertTrue(spec == "42")
+		XCTAssertTrue(spec == "0123")
+		XCTAssertTrue(spec == "666")
+		XCTAssertFalse(spec == "ice")
+		XCTAssertFalse(spec == "too long")
+		XCTAssertFalse(spec == "00")
+		XCTAssertFalse(spec == "1010")
+		
+		XCTAssertFalse(spec != "42")
+		XCTAssertFalse(spec != "0123")
+		XCTAssertFalse(spec != "666")
+		XCTAssertTrue(spec != "ice")
+		XCTAssertTrue(spec != "too long")
+		XCTAssertTrue(spec != "00")
+		XCTAssertTrue(spec != "1010")
 	}
 	
 }
