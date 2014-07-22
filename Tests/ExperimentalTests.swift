@@ -10,9 +10,11 @@ class ExperimentalTests: XCTestCase {
 		3. the string must not contain two zeroes
 		*/
 		let onlyDigits = CharacterSetSpecification.decimalDigitCharacterSet()
-		let between2And4Letters = RegularExpressionSpecification.pattern("^.{2,4}$")
-		let twoZeroes = RegularExpressionSpecification.pattern("0.*0")
+		let between2And4Letters = RegularExpressionSpecification(pattern: "^.{2,4}$")
+		let twoZeroes = RegularExpressionSpecification(pattern: "0.*0")
+		
 		let spec = onlyDigits & between2And4Letters & !twoZeroes
+		
 		XCTAssertTrue(spec.isSatisfiedBy("42"))
 		XCTAssertTrue(spec.isSatisfiedBy("0123"))
 		XCTAssertTrue(spec.isSatisfiedBy("666"))

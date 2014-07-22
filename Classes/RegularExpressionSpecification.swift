@@ -8,11 +8,11 @@ class RegularExpressionSpecification: CompositeSpecification {
 		super.init()
 	}
 	
-	class func pattern(pattern: String) -> RegularExpressionSpecification {
+	convenience init(pattern: String) {
 		var error: NSError?
 		var regularExpression = NSRegularExpression.regularExpressionWithPattern(pattern, options: nil, error: &error)
 		assert(!error, "the regular expression pattern must always compile")
-		return RegularExpressionSpecification(regularExpression: regularExpression)
+		self.init(regularExpression: regularExpression)
 	}
 	
 	override func isSatisfiedBy(candidate: Any?) -> Bool {
