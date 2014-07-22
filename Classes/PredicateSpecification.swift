@@ -8,7 +8,7 @@ class PredicateSpecification<T>: CompositeSpecification {
 		super.init()
 	}
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		if let obj = candidate as? T {
 			return predicate(obj)
 		}

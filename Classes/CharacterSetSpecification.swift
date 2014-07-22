@@ -84,12 +84,12 @@ class CharacterSetSpecification: CompositeSpecification {
 	}
 
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		if let fullString = candidate as? String {
 			for character: Character in fullString {
-				let range: Range<String.Index> =
+				let range: Range<String.Index>? =
 				String(character).rangeOfCharacterFromSet(characterSet)
-				if range.isEmpty {
+				if !range || range!.isEmpty {
 					return false // one or more characters does not satify the characterSet
 				}
 			}

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
                             
-	@IBOutlet var textField : UITextField = nil
+	@IBOutlet weak var textField : UITextField!
 	
 	var validSpecification : Specification
 	var partialSpecification : Specification

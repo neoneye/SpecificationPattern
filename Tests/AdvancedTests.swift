@@ -20,6 +20,7 @@ class AdvancedTests: XCTestCase {
 		XCTAssertFalse(spec.isSatisfiedBy("too long"))
 		XCTAssertFalse(spec.isSatisfiedBy("00"))
 		XCTAssertFalse(spec.isSatisfiedBy("1010"))
+		XCTAssertFalse(spec.isSatisfiedBy(nil))
 	}
 	
 }

@@ -1,12 +1,12 @@
 protocol Specification {
-	func isSatisfiedBy(candidate: Any) -> Bool
+	func isSatisfiedBy(candidate: Any?) -> Bool
 	func and(other: Specification) -> Specification
 	func or(other: Specification) -> Specification
 	func not() -> Specification
 }
 
 class CompositeSpecification: Specification {
-	func isSatisfiedBy(candidate: Any) -> Bool {
+	func isSatisfiedBy(candidate: Any?) -> Bool {
 		// subclass must implement this method
 		return false
 	}
@@ -34,7 +34,7 @@ class AndSpecification: CompositeSpecification {
 		super.init()
 	}
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		return one.isSatisfiedBy(candidate) && other.isSatisfiedBy(candidate)
 	}
 }
@@ -49,7 +49,7 @@ class OrSpecification: CompositeSpecification {
 		super.init()
 	}
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		return one.isSatisfiedBy(candidate) || other.isSatisfiedBy(candidate)
 	}
 }
@@ -62,7 +62,7 @@ class NotSpecification: CompositeSpecification {
 		super.init()
 	}
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		return !wrapped.isSatisfiedBy(candidate)
 	}
 }

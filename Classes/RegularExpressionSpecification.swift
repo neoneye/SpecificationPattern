@@ -15,7 +15,7 @@ class RegularExpressionSpecification: CompositeSpecification {
 		return RegularExpressionSpecification(regularExpression: regularExpression)
 	}
 	
-	override func isSatisfiedBy(candidate: Any) -> Bool {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
 		if let s = candidate as? String {
 			return regularExpression.numberOfMatchesInString(s, options: nil, range: NSMakeRange(0, countElements(s))) > 0
 		}

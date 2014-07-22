@@ -6,6 +6,7 @@ class RegularExpressionSpecificationTests: XCTestCase {
 		let spec = RegularExpressionSpecification.pattern("^\\d+$")
 		XCTAssertTrue(spec.isSatisfiedBy("123"))
 		XCTAssertFalse(spec.isSatisfiedBy("abc"))
+		XCTAssertFalse(spec.isSatisfiedBy(nil))
 	}
 	
 }
