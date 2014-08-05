@@ -15,13 +15,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	var validSpecification : Specification
 	var partialSpecification : Specification
 	
-	init(coder aDecoder: NSCoder!) {
+	required init(coder aDecoder: NSCoder!) {
 		validSpecification = ViewController.createValidSpecification()
 		partialSpecification = ViewController.createPartialSpecification()
 		super.init(coder: aDecoder)
 	}
 	
-	init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+	override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
 		validSpecification = ViewController.createValidSpecification()
 		partialSpecification = ViewController.createPartialSpecification()
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
 		if let originalText : NSString = textField.text {
 			let newText = originalText.stringByReplacingCharactersInRange(range, withString: string)
-			updateColorForText(String(newText))
+			updateColorForText(newText)
 		}
 		return true
 	}

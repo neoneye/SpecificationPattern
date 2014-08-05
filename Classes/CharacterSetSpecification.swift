@@ -89,7 +89,10 @@ class CharacterSetSpecification: CompositeSpecification {
 			for character: Character in fullString {
 				let range: Range<String.Index>? =
 				String(character).rangeOfCharacterFromSet(characterSet)
-				if !range || range!.isEmpty {
+				if range == nil {
+					return false // one or more characters does not satify the characterSet
+				}
+				if range!.isEmpty {
 					return false // one or more characters does not satify the characterSet
 				}
 			}

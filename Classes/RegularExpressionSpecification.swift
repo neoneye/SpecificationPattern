@@ -11,7 +11,7 @@ class RegularExpressionSpecification: CompositeSpecification {
 	convenience init(pattern: String) {
 		var error: NSError?
 		var regularExpression = NSRegularExpression.regularExpressionWithPattern(pattern, options: nil, error: &error)
-		assert(!error, "the regular expression pattern must always compile")
+		assert(error == nil, "the regular expression pattern must always compile")
 		self.init(regularExpression: regularExpression)
 	}
 	
