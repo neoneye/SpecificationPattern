@@ -12,7 +12,8 @@ class RegularExpressionSpecification: CompositeSpecification {
 		var error: NSError?
 		var regularExpression = NSRegularExpression.regularExpressionWithPattern(pattern, options: nil, error: &error)
 		assert(error == nil, "the regular expression pattern must always compile")
-		self.init(regularExpression: regularExpression)
+		assert(regularExpression != nil, "the regular expression pattern must always compile")
+		self.init(regularExpression: regularExpression!)
 	}
 	
 	override func isSatisfiedBy(candidate: Any?) -> Bool {

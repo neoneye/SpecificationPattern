@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	var validSpecification : Specification
 	var partialSpecification : Specification
 	
-	required init(coder aDecoder: NSCoder!) {
+	required init(coder aDecoder: NSCoder) {
 		validSpecification = ViewController.createValidSpecification()
 		partialSpecification = ViewController.createPartialSpecification()
 		super.init(coder: aDecoder)
