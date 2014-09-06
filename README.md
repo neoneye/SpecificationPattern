@@ -7,6 +7,12 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 Source: [wikipedia](http://en.wikipedia.org/wiki/Specification_pattern)
 
 
+## Requirements
+
+- Xcode 6 Beta 7
+- iOS 7.0+ / Mac OS X 10.9+
+
+
 ## Usage
 
 Chain two specifications into a single specification.
