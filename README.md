@@ -17,17 +17,18 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 
 Chain two specifications into a single specification.
 
-	let s0 = RegularExpressionSpecification(pattern: "hello.*world")
-	let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
-	let spec = s0 & s1
-		
-	spec == "42"
-	# false, doesn't satify s0 and s1
-	spec == "hello world"
-	# false, s0 is satisfied, but not s1
-	spec == "say hello to the world today"
-	# true
+```swift
+let s0 = RegularExpressionSpecification(pattern: "hello.*world")
+let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
+let spec = s0 & s1
 
+spec == "42"
+# false, doesn't satify s0 and s1
+spec == "hello world"
+# false, s0 is satisfied, but not s1
+spec == "say hello to the world today"
+# true
+```
 
 ## Useful classes
 
@@ -76,21 +77,21 @@ In the following example, we are retrieving invoices and sending them to a colle
 
 This example is meant to show the end result of how the logic is 'chained' together.
 
-	let overDue = OverDueSpecification()
-	let noticeSent = NoticeSentSpecification()
-	let inCollection = InCollectionSpecification()
- 
-	// example of specification pattern logic chaining
-	let sendToCollection = overDue & noticeSent & !inCollection
- 
-	let invoiceCollection = Service.invoices()
-	for invoice in invoiceCollection {
-	    if sendToCollection.isSatisfiedBy(invoice) {
-	        invoice.sendToCollection()
-	    }
-	}
-	
+```swift
+let overDue = OverDueSpecification()
+let noticeSent = NoticeSentSpecification()
+let inCollection = InCollectionSpecification()
 
+// example of specification pattern logic chaining
+let sendToCollection = overDue & noticeSent & !inCollection
+
+let invoiceCollection = Service.invoices()
+for invoice in invoiceCollection {
+    if sendToCollection.isSatisfiedBy(invoice) {
+        invoice.sendToCollection()
+    }
+}
+```
 
 ## Sample project - Live text validation
 
