@@ -4,14 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Tests.xcscheme</key>
+		<key>Test-iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4288531119CA027B00362DE5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>42E1B7EE194240640022E796</key>
 		<dict>
 			<key>primary</key>

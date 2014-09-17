@@ -11,6 +11,21 @@
 		4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */; };
 		4250D8391947B93400537779 /* RegularExpressionSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */; };
 		4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83A1947B98A00537779 /* AdvancedTests.swift */; };
+		4288530B19C9FF3F00362DE5 /* CountSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288530A19C9FF3F00362DE5 /* CountSpecification.swift */; };
+		4288530D19CA007C00362DE5 /* CountSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288530C19CA007C00362DE5 /* CountSpecificationTests.swift */; };
+		4288531B19CA02CB00362DE5 /* CharacterSetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8341947B5D000537779 /* CharacterSetSpecification.swift */; };
+		4288531C19CA02CB00362DE5 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEC197E7FDC00D327EC /* Operator.swift */; };
+		4288531D19CA02CB00362DE5 /* PredicateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */; };
+		4288531E19CA02CB00362DE5 /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */; };
+		4288531F19CA02CB00362DE5 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
+		4288532019CA02CB00362DE5 /* CountSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288530A19C9FF3F00362DE5 /* CountSpecification.swift */; };
+		4288532119CA02CB00362DE5 /* AdvancedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83A1947B98A00537779 /* AdvancedTests.swift */; };
+		4288532219CA02CB00362DE5 /* CharacterSetSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */; };
+		4288532319CA02CB00362DE5 /* CountSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288530C19CA007C00362DE5 /* CountSpecificationTests.swift */; };
+		4288532419CA02CB00362DE5 /* OperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEA197E7FC700D327EC /* OperatorTests.swift */; };
+		4288532519CA02CB00362DE5 /* PredicateSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */; };
+		4288532619CA02CB00362DE5 /* RegularExpressionSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */; };
+		4288532719CA02CB00362DE5 /* SpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* SpecificationTests.swift */; };
 		428F9FEB197E7FC700D327EC /* OperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEA197E7FC700D327EC /* OperatorTests.swift */; };
 		428F9FED197E7FDC00D327EC /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEC197E7FDC00D327EC /* Operator.swift */; };
 		42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */; };
@@ -25,6 +40,10 @@
 		4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetSpecificationTests.swift; sourceTree = "<group>"; };
 		4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecificationTests.swift; sourceTree = "<group>"; };
 		4250D83A1947B98A00537779 /* AdvancedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedTests.swift; sourceTree = "<group>"; };
+		4288530A19C9FF3F00362DE5 /* CountSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSpecification.swift; sourceTree = "<group>"; };
+		4288530C19CA007C00362DE5 /* CountSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSpecificationTests.swift; sourceTree = "<group>"; };
+		4288531219CA027B00362DE5 /* Test-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4288531519CA027B00362DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		428F9FEA197E7FC700D327EC /* OperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorTests.swift; sourceTree = "<group>"; };
 		428F9FEC197E7FDC00D327EC /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecification.swift; sourceTree = "<group>"; };
@@ -37,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4288530F19CA027B00362DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E1B7FA194240A00022E796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4288531319CA027B00362DE5 /* Test-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4288531419CA027B00362DE5 /* Supporting Files */,
+			);
+			path = "Test-iOS";
+			sourceTree = "<group>";
+		};
+		4288531419CA027B00362DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4288531519CA027B00362DE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		42B7F33C19479AC200CBB434 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +97,7 @@
 				42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */,
 				42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */,
 				42B7F33E19479AC200CBB434 /* Specification.swift */,
+				4288530A19C9FF3F00362DE5 /* CountSpecification.swift */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -66,11 +109,13 @@
 				42B7F33C19479AC200CBB434 /* Classes */,
 				4250D83A1947B98A00537779 /* AdvancedTests.swift */,
 				4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */,
+				4288530C19CA007C00362DE5 /* CountSpecificationTests.swift */,
 				42E1B80F194241B90022E796 /* Info.plist */,
 				428F9FEA197E7FC700D327EC /* OperatorTests.swift */,
 				42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */,
 				4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */,
 				42E1B80D194241AD0022E796 /* SpecificationTests.swift */,
+				4288531319CA027B00362DE5 /* Test-iOS */,
 				42E1B7F0194240640022E796 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				42E1B7FD194240A00022E796 /* Tests.xctest */,
+				4288531219CA027B00362DE5 /* Test-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +132,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4288531119CA027B00362DE5 /* Test-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4288531819CA027B00362DE5 /* Build configuration list for PBXNativeTarget "Test-iOS" */;
+			buildPhases = (
+				4288530E19CA027B00362DE5 /* Sources */,
+				4288530F19CA027B00362DE5 /* Frameworks */,
+				4288531019CA027B00362DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test-iOS";
+			productName = "Test-iOS";
+			productReference = 4288531219CA027B00362DE5 /* Test-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		42E1B7FC194240A00022E796 /* Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42E1B803194240A00022E796 /* Build configuration list for PBXNativeTarget "Tests" */;
@@ -112,6 +175,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = None;
 				TargetAttributes = {
+					4288531119CA027B00362DE5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					42E1B7FC194240A00022E796 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -130,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				42E1B7FC194240A00022E796 /* Tests */,
+				4288531119CA027B00362DE5 /* Test-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4288531019CA027B00362DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E1B7FB194240A00022E796 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,10 +219,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4288530E19CA027B00362DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4288532619CA02CB00362DE5 /* RegularExpressionSpecificationTests.swift in Sources */,
+				4288531B19CA02CB00362DE5 /* CharacterSetSpecification.swift in Sources */,
+				4288531D19CA02CB00362DE5 /* PredicateSpecification.swift in Sources */,
+				4288531C19CA02CB00362DE5 /* Operator.swift in Sources */,
+				4288532019CA02CB00362DE5 /* CountSpecification.swift in Sources */,
+				4288532719CA02CB00362DE5 /* SpecificationTests.swift in Sources */,
+				4288532419CA02CB00362DE5 /* OperatorTests.swift in Sources */,
+				4288531F19CA02CB00362DE5 /* Specification.swift in Sources */,
+				4288531E19CA02CB00362DE5 /* RegularExpressionSpecification.swift in Sources */,
+				4288532319CA02CB00362DE5 /* CountSpecificationTests.swift in Sources */,
+				4288532119CA02CB00362DE5 /* AdvancedTests.swift in Sources */,
+				4288532219CA02CB00362DE5 /* CharacterSetSpecificationTests.swift in Sources */,
+				4288532519CA02CB00362DE5 /* PredicateSpecificationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E1B7F9194240A00022E796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4288530D19CA007C00362DE5 /* CountSpecificationTests.swift in Sources */,
 				4250D8351947B5D000537779 /* CharacterSetSpecification.swift in Sources */,
 				42B7F34019479AC200CBB434 /* Specification.swift in Sources */,
 				42C69FCA194A023C0017DFAB /* PredicateSpecificationTests.swift in Sources */,
@@ -158,6 +253,7 @@
 				4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */,
 				4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */,
 				42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */,
+				4288530B19C9FF3F00362DE5 /* CountSpecification.swift in Sources */,
 				42C69FC8194A01F30017DFAB /* PredicateSpecification.swift in Sources */,
 				4250D8391947B93400537779 /* RegularExpressionSpecificationTests.swift in Sources */,
 			);
@@ -166,6 +262,43 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		4288531919CA027B00362DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Test-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4288531A19CA027B00362DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Test-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		42E1B7F4194240640022E796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,6 +409,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4288531819CA027B00362DE5 /* Build configuration list for PBXNativeTarget "Test-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4288531919CA027B00362DE5 /* Debug */,
+				4288531A19CA027B00362DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		42E1B7EA194240640022E796 /* Build configuration list for PBXProject "SpecificationTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
