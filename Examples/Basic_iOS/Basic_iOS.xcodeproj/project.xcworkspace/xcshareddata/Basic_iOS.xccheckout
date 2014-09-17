@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A1624A65-2C26-4595-8115-88819F2A0CAC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Basic_iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>49F6C4F898F10D3F11FD8CCADDCBF6579035BE0F</key>
+		<string>https://github.com/neoneye/SpecificationPattern.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/Basic_iOS/Basic_iOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>49F6C4F898F10D3F11FD8CCADDCBF6579035BE0F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/neoneye/SpecificationPattern.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>49F6C4F898F10D3F11FD8CCADDCBF6579035BE0F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>49F6C4F898F10D3F11FD8CCADDCBF6579035BE0F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swift-specification-pattern</string>
+		</dict>
+	</array>
+</dict>
+</plist>

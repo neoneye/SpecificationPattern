@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		424CE09D195B5538001C5321 /* PredicateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CE09C195B5538001C5321 /* PredicateSpecification.swift */; };
 		4250D83D1947BA2600537779 /* CharacterSetSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */; };
+		4288532919CA37D500362DE5 /* CountSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288532819CA37D500362DE5 /* CountSpecification.swift */; };
 		428F9FEF197E808500D327EC /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEE197E808500D327EC /* Operator.swift */; };
 		42B7F34519479AE500CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F34319479AE500CBB434 /* Specification.swift */; };
 		42C69FD2194A54200017DFAB /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FD1194A54200017DFAB /* RegularExpressionSpecification.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		424CE09C195B5538001C5321 /* PredicateSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateSpecification.swift; sourceTree = "<group>"; };
 		4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSetSpecification.swift; sourceTree = "<group>"; };
+		4288532819CA37D500362DE5 /* CountSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSpecification.swift; sourceTree = "<group>"; };
 		428F9FEE197E808500D327EC /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		42B7F34319479AE500CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42C69FD1194A54200017DFAB /* RegularExpressionSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecification.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				4250D83C1947BA2600537779 /* CharacterSetSpecification.swift */,
+				4288532819CA37D500362DE5 /* CountSpecification.swift */,
 				428F9FEE197E808500D327EC /* Operator.swift */,
 				424CE09C195B5538001C5321 /* PredicateSpecification.swift */,
 				42C69FD1194A54200017DFAB /* RegularExpressionSpecification.swift */,
@@ -167,6 +170,7 @@
 				4250D83D1947BA2600537779 /* CharacterSetSpecification.swift in Sources */,
 				42E1B7B119422EFC0022E796 /* ViewController.swift in Sources */,
 				428F9FEF197E808500D327EC /* Operator.swift in Sources */,
+				4288532919CA37D500362DE5 /* CountSpecification.swift in Sources */,
 				42E1B7AF19422EFC0022E796 /* AppDelegate.swift in Sources */,
 				42B7F34519479AE500CBB434 /* Specification.swift in Sources */,
 			);

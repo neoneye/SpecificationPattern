@@ -93,11 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				4250D8341947B5D000537779 /* CharacterSetSpecification.swift */,
+				4288530A19C9FF3F00362DE5 /* CountSpecification.swift */,
 				428F9FEC197E7FDC00D327EC /* Operator.swift */,
 				42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */,
 				42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */,
 				42B7F33E19479AC200CBB434 /* Specification.swift */,
-				4288530A19C9FF3F00362DE5 /* CountSpecification.swift */,
 			);
 			name = Classes;
 			path = ../Classes;
