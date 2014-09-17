@@ -9,7 +9,7 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 
 ## Requirements
 
-- Xcode 6 Beta 7
+- Xcode 6
 - iOS 7.0+ / Mac OS X 10.9+
 
 
@@ -19,7 +19,7 @@ Chain two specifications into a single specification.
 
 ```swift
 let s0 = RegularExpressionSpecification(pattern: "hello.*world")
-let s1 = RegularExpressionSpecification(pattern: "^.*{20,30}$")
+let s1 = CountSpecification.between(20, 30)
 let spec = s0 & s1
 
 spec == "42"
