@@ -37,6 +37,7 @@ Beyond the specification pattern itself, this project provides the following iOS
 * CharacterSetSpecification - for ensuring all characters in a string are of a certain kind, eg. all digits
 * PredicateSpecification - if you don't want to subclass you can use this and instead provide a closure 
 * RegularExpressionSpecification - useful for string matching
+* CountSpecification - for ensuring that a string/array isn't too long or short
 
 
 ## Operators
