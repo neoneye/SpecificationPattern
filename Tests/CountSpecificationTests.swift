@@ -32,6 +32,15 @@ class CountSpecificationTests: XCTestCase {
 		XCTAssertFalse(spec.isSatisfiedBy("012345"))
 	}
 
+	func testStringExcactly() {
+		let spec = CountSpecification.exactly(2)
+		XCTAssertFalse(spec.isSatisfiedBy(""))
+		XCTAssertFalse(spec.isSatisfiedBy("0"))
+		XCTAssertTrue(spec.isSatisfiedBy("01"))
+		XCTAssertFalse(spec.isSatisfiedBy("012"))
+		XCTAssertFalse(spec.isSatisfiedBy("0123"))
+	}
+	
 	func testArrayMin() {
 		let array0: [Bool] = []
 		let spec = CountSpecification.min(3)
@@ -62,6 +71,16 @@ class CountSpecificationTests: XCTestCase {
 		XCTAssertTrue(spec.isSatisfiedBy( [0, 1, 2, 3] ))
 		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3, 4] ))
 		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3, 4, 5] ))
+	}
+	
+	func testArrayExactly() {
+		let array0: [Bool] = []
+		let spec = CountSpecification.exactly(2)
+		XCTAssertFalse(spec.isSatisfiedBy(array0))
+		XCTAssertFalse(spec.isSatisfiedBy( [0] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3] ))
 	}
 	
 }

@@ -14,6 +14,10 @@ class CountSpecification: CompositeSpecification {
 		return CountSpecification().min(minCount).max(maxCount)
 	}
 	
+	class func exactly(count: Int) -> CountSpecification {
+		return CountSpecification().min(count).max(count)
+	}
+	
 	var minCount: Int?
 	var maxCount: Int?
 	
