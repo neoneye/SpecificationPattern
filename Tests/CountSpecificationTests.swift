@@ -32,4 +32,36 @@ class CountSpecificationTests: XCTestCase {
 		XCTAssertFalse(spec.isSatisfiedBy("012345"))
 	}
 
+	func testArrayMin() {
+		let array0: [Bool] = []
+		let spec = CountSpecification.min(3)
+		XCTAssertFalse(spec.isSatisfiedBy( array0 ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1, 2] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1, 2, 3] ))
+	}
+	
+	func testArrayMax() {
+		let array0: [Bool] = []
+		let spec = CountSpecification.max(2)
+		XCTAssertTrue(spec.isSatisfiedBy( array0 ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3] ))
+	}
+
+	func testArrayBetween() {
+		let array0: [Bool] = []
+		let spec = CountSpecification.between(2, 4)
+		XCTAssertFalse(spec.isSatisfiedBy(array0))
+		XCTAssertFalse(spec.isSatisfiedBy( [0] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1, 2] ))
+		XCTAssertTrue(spec.isSatisfiedBy( [0, 1, 2, 3] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3, 4] ))
+		XCTAssertFalse(spec.isSatisfiedBy( [0, 1, 2, 3, 4, 5] ))
+	}
+	
 }

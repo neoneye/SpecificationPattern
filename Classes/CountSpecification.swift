@@ -39,6 +39,12 @@ class CountSpecification: CompositeSpecification {
 				break
 			}
 			
+			// Obtain length of Array, see http://stackoverflow.com/a/25901509/78336
+			if let y = candidate as? NSArray {
+				count = countElements(y as Array)
+				break
+			}
+			
 			// This candidate is not a collection
 			return false
 		} while(false)
