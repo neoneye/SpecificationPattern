@@ -76,27 +76,21 @@ class AdvancedTests: XCTestCase {
 		assert(path != nil)
 		let dataString = NSString.stringWithContentsOfFile(path!, encoding: NSUTF8StringEncoding, error: nil)
 
-		// Create records from the CSV data
+		// Split CSV data into rows and fields
 		let rows = dataString.componentsSeparatedByString("\n")
 		var records: [MovieRecord] = []
 		for row in rows {
 			let cells = row.componentsSeparatedByString(";")
-			if cells.count < 6 {
-				continue
-			}
+			assert(cells.count == 6)
 			
+			// Create record populated with CSV data
 			var record: MovieRecord = MovieRecord()
 			record.recordId = (cells[0] as String).toInt() ?? 0
 			record.name = cells[1] as String
 			record.released = (cells[2] as String).toInt() ?? 0
 			record.directorsWriters = cells[3] as String
-			
-			let s = cells[4] as String
-			record.budget = NSString(string: s).doubleValue
-			
+			record.budget = NSString(string: (cells[4] as String)).doubleValue
 			record.runningTime = (cells[5] as String).toInt() ?? 0
-			
-			println("\(record.recordId) \(record.name) \(record.released) \(record.directorsWriters) \(record.budget) \(record.runningTime)")
 			records.append(record)
 		}
 		
