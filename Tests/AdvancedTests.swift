@@ -25,4 +25,82 @@ class AdvancedTests: XCTestCase {
 		XCTAssertFalse(spec.isSatisfiedBy(nil))
 	}
 	
+	func testFilter0() {
+		/*
+		This specification is used for filtering an array of records (movies in the alien franchise).
+		Here we finds all the movies directed by Ridley Scott.
+		*/
+		let spec = RegularExpressionSpecification(pattern: "Ridley Scott")
+		let filterSpec = PredicateSpecification { (candidate: MovieRecord) -> Bool in
+			return spec.isSatisfiedBy(candidate.directorsWriters)
+		}
+		let result = movieRecords().filter { filterSpec.isSatisfiedBy($0) }
+		// Ridley Scott has directed 2 movies: Alien and Prometheus
+		XCTAssertEqual(2, result.count)
+	}
+
+	func testFilter1() {
+		/*
+		This specification is used for filtering an array of records (movies in the alien franchise).
+		Here we finds the cheapest movies and also the most expensive movies.
+		*/
+		let nonZeroBudget = PredicateSpecification { (candidate: MovieRecord) -> Bool in
+			return candidate.budget > 0
+		}
+		let smallBudget = PredicateSpecification { (candidate: MovieRecord) -> Bool in
+			// cheaper than 20 millions USD
+			return candidate.budget < 20
+		}
+		let bigBudget = PredicateSpecification { (candidate: MovieRecord) -> Bool in
+			// more expensive than 70 millions USD
+			return candidate.budget > 70
+		}
+		let filterSpec = nonZeroBudget.and(smallBudget.or(bigBudget))
+		let result = movieRecords().filter { filterSpec.isSatisfiedBy($0) }
+		// There are 2 cheap movies and 2 expensive movies
+		XCTAssertEqual(4, result.count)
+	}
+	
+	class MovieRecord {
+		var recordId: Int = 0
+		var name: String = ""
+		var released: Int = 0
+		var directorsWriters: String = ""
+		var budget: Double = 0.0
+		var runningTime: Int = 0
+	}
+	
+	func movieRecords() -> [MovieRecord] {
+		// Read a CSV file
+		let path = NSBundle(forClass: self.dynamicType).pathForResource("alien", ofType: "csv")
+		assert(path != nil)
+		let dataString = NSString.stringWithContentsOfFile(path!, encoding: NSUTF8StringEncoding, error: nil)
+
+		// Create records from the CSV data
+		let rows = dataString.componentsSeparatedByString("\n")
+		var records: [MovieRecord] = []
+		for row in rows {
+			let cells = row.componentsSeparatedByString(";")
+			if cells.count < 6 {
+				continue
+			}
+			
+			var record: MovieRecord = MovieRecord()
+			record.recordId = (cells[0] as String).toInt() ?? 0
+			record.name = cells[1] as String
+			record.released = (cells[2] as String).toInt() ?? 0
+			record.directorsWriters = cells[3] as String
+			
+			let s = cells[4] as String
+			record.budget = NSString(string: s).doubleValue
+			
+			record.runningTime = (cells[5] as String).toInt() ?? 0
+			
+			println("\(record.recordId) \(record.name) \(record.released) \(record.directorsWriters) \(record.budget) \(record.runningTime)")
+			records.append(record)
+		}
+		
+		return records
+	}
+	
 }

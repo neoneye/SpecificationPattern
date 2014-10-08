@@ -30,6 +30,7 @@
 		428F9FED197E7FDC00D327EC /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEC197E7FDC00D327EC /* Operator.swift */; };
 		42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */; };
 		42B7F34019479AC200CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
+		42B9E0F619E5B3BC00EBCCDE /* alien.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42B9E0F519E5B3BC00EBCCDE /* alien.csv */; };
 		42C69FC8194A01F30017DFAB /* PredicateSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */; };
 		42C69FCA194A023C0017DFAB /* PredicateSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */; };
 		42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* SpecificationTests.swift */; };
@@ -48,6 +49,7 @@
 		428F9FEC197E7FDC00D327EC /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecification.swift; sourceTree = "<group>"; };
 		42B7F33E19479AC200CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
+		42B9E0F519E5B3BC00EBCCDE /* alien.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alien.csv; sourceTree = "<group>"; };
 		42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateSpecification.swift; sourceTree = "<group>"; };
 		42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredicateSpecificationTests.swift; sourceTree = "<group>"; };
 		42E1B7FD194240A00022E796 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 		4288531319CA027B00362DE5 /* Test-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				42B9E0F519E5B3BC00EBCCDE /* alien.csv */,
 				4288531419CA027B00362DE5 /* Supporting Files */,
 			);
 			path = "Test-iOS";
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B9E0F619E5B3BC00EBCCDE /* alien.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +420,7 @@
 				4288531A19CA027B00362DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42E1B7EA194240640022E796 /* Build configuration list for PBXProject "SpecificationTesting" */ = {
 			isa = XCConfigurationList;
