@@ -74,10 +74,10 @@ class AdvancedTests: XCTestCase {
 		// Read a CSV file
 		let path = NSBundle(forClass: self.dynamicType).pathForResource("alien", ofType: "csv")
 		assert(path != nil)
-		let dataString = NSString.stringWithContentsOfFile(path!, encoding: NSUTF8StringEncoding, error: nil)
+		let dataString = NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)
 
 		// Split CSV data into rows and fields
-		let rows = dataString.componentsSeparatedByString("\n")
+		let rows = dataString!.componentsSeparatedByString("\n")
 		var records: [MovieRecord] = []
 		for row in rows {
 			let cells = row.componentsSeparatedByString(";")

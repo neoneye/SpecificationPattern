@@ -14,7 +14,7 @@
 		<string>https://github.com/neoneye/SpecificationPattern.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tests/SpecificationTesting.xcodeproj/project.xcworkspace</string>
+	<string>Tests/SpecificationTesting.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>49F6C4F898F10D3F11FD8CCADDCBF6579035BE0F</key>
