@@ -66,3 +66,15 @@ class NotSpecification: CompositeSpecification {
 		return !wrapped.isSatisfiedBy(candidate)
 	}
 }
+
+class FalseSpecification: CompositeSpecification {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
+		return false
+	}
+}
+
+class TrueSpecification: CompositeSpecification {
+	override func isSatisfiedBy(candidate: Any?) -> Bool {
+		return true
+	}
+}
