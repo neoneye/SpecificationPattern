@@ -31,6 +31,10 @@
 		4288532719CA02CB00362DE5 /* SpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E1B80D194241AD0022E796 /* SpecificationTests.swift */; };
 		428F9FEB197E7FC700D327EC /* OperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEA197E7FC700D327EC /* OperatorTests.swift */; };
 		428F9FED197E7FDC00D327EC /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428F9FEC197E7FDC00D327EC /* Operator.swift */; };
+		42935FC71A1A55F300C06025 /* EmailSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42935FC61A1A55F300C06025 /* EmailSpecificationTests.swift */; };
+		42935FC81A1A565600C06025 /* EmailSpecificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42935FC61A1A55F300C06025 /* EmailSpecificationTests.swift */; };
+		42935FC91A1A566700C06025 /* EmailSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42935FC41A1A54BE00C06025 /* EmailSpecification.swift */; };
+		42935FCA1A1A566800C06025 /* EmailSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42935FC41A1A54BE00C06025 /* EmailSpecification.swift */; };
 		42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */; };
 		42B7F34019479AC200CBB434 /* Specification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B7F33E19479AC200CBB434 /* Specification.swift */; };
 		42B9E0F619E5B3BC00EBCCDE /* alien.csv in Resources */ = {isa = PBXBuildFile; fileRef = 42B9E0F519E5B3BC00EBCCDE /* alien.csv */; };
@@ -51,6 +55,8 @@
 		4288531519CA027B00362DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		428F9FEA197E7FC700D327EC /* OperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorTests.swift; sourceTree = "<group>"; };
 		428F9FEC197E7FDC00D327EC /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		42935FC41A1A54BE00C06025 /* EmailSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSpecification.swift; sourceTree = "<group>"; };
+		42935FC61A1A55F300C06025 /* EmailSpecificationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSpecificationTests.swift; sourceTree = "<group>"; };
 		42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionSpecification.swift; sourceTree = "<group>"; };
 		42B7F33E19479AC200CBB434 /* Specification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specification.swift; sourceTree = "<group>"; };
 		42B9E0F519E5B3BC00EBCCDE /* alien.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alien.csv; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 			children = (
 				4250D8341947B5D000537779 /* CharacterSetSpecification.swift */,
 				4288530A19C9FF3F00362DE5 /* CountSpecification.swift */,
+				42935FC41A1A54BE00C06025 /* EmailSpecification.swift */,
 				428F9FEC197E7FDC00D327EC /* Operator.swift */,
 				42C69FC7194A01F30017DFAB /* PredicateSpecification.swift */,
 				42B7F33D19479AC200CBB434 /* RegularExpressionSpecification.swift */,
@@ -117,14 +124,15 @@
 				4250D83A1947B98A00537779 /* AdvancedTests.swift */,
 				4250D8361947B63000537779 /* CharacterSetSpecificationTests.swift */,
 				4288530C19CA007C00362DE5 /* CountSpecificationTests.swift */,
+				42935FC61A1A55F300C06025 /* EmailSpecificationTests.swift */,
 				42E1B80F194241B90022E796 /* Info.plist */,
 				428F9FEA197E7FC700D327EC /* OperatorTests.swift */,
 				42C69FC9194A023C0017DFAB /* PredicateSpecificationTests.swift */,
+				42E1B7F0194240640022E796 /* Products */,
 				4250D8381947B93400537779 /* RegularExpressionSpecificationTests.swift */,
 				42E1B80D194241AD0022E796 /* SpecificationTests.swift */,
-				420E46441A00329E00AD5779 /* TrueFalseTests.swift */,
 				4288531319CA027B00362DE5 /* Test-iOS */,
-				42E1B7F0194240640022E796 /* Products */,
+				420E46441A00329E00AD5779 /* TrueFalseTests.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,7 +253,9 @@
 				4288531E19CA02CB00362DE5 /* RegularExpressionSpecification.swift in Sources */,
 				4288532319CA02CB00362DE5 /* CountSpecificationTests.swift in Sources */,
 				4288532119CA02CB00362DE5 /* AdvancedTests.swift in Sources */,
+				42935FC91A1A566700C06025 /* EmailSpecification.swift in Sources */,
 				4288532219CA02CB00362DE5 /* CharacterSetSpecificationTests.swift in Sources */,
+				42935FC81A1A565600C06025 /* EmailSpecificationTests.swift in Sources */,
 				4288532519CA02CB00362DE5 /* PredicateSpecificationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,11 +270,13 @@
 				42C69FCA194A023C0017DFAB /* PredicateSpecificationTests.swift in Sources */,
 				428F9FEB197E7FC700D327EC /* OperatorTests.swift in Sources */,
 				420E46451A00329E00AD5779 /* TrueFalseTests.swift in Sources */,
+				42935FC71A1A55F300C06025 /* EmailSpecificationTests.swift in Sources */,
 				42E1B80E194241AD0022E796 /* SpecificationTests.swift in Sources */,
 				428F9FED197E7FDC00D327EC /* Operator.swift in Sources */,
 				4250D83B1947B98A00537779 /* AdvancedTests.swift in Sources */,
 				4250D8371947B63000537779 /* CharacterSetSpecificationTests.swift in Sources */,
 				42B7F33F19479AC200CBB434 /* RegularExpressionSpecification.swift in Sources */,
+				42935FCA1A1A566800C06025 /* EmailSpecification.swift in Sources */,
 				4288530B19C9FF3F00362DE5 /* CountSpecification.swift in Sources */,
 				42C69FC8194A01F30017DFAB /* PredicateSpecification.swift in Sources */,
 				4250D8391947B93400537779 /* RegularExpressionSpecificationTests.swift in Sources */,
