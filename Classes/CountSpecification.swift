@@ -36,16 +36,16 @@ class CountSpecification: CompositeSpecification {
 			return false
 		}
 
-		var count: Int = 0
+		var n: Int = 0
 		do {
 			if let x = candidate as? String {
-				count = countElements(x)
+				n = count(x)
 				break
 			}
 			
 			// Obtain length of Array, see http://stackoverflow.com/a/25901509/78336
 			if let y = candidate as? NSArray {
-				count = countElements(y as Array)
+				n = count(y as Array)
 				break
 			}
 			
@@ -56,11 +56,11 @@ class CountSpecification: CompositeSpecification {
 		
 		switch (minCount, maxCount) {
 		case (.Some(let min), .Some(let max)):
-			return (count >= min) && (count <= max)
+			return (n >= min) && (n <= max)
 		case (.Some(let min), _):
-			return (count >= min)
+			return (n >= min)
 		case (_, .Some(let max)):
-			return (count <= max)
+			return (n <= max)
 		default:
 			break
 		}

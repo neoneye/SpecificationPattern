@@ -85,12 +85,12 @@ class AdvancedTests: XCTestCase {
 			
 			// Create record populated with CSV data
 			var record: MovieRecord = MovieRecord()
-			record.recordId = (cells[0] as String).toInt() ?? 0
-			record.name = cells[1] as String
-			record.released = (cells[2] as String).toInt() ?? 0
-			record.directorsWriters = cells[3] as String
-			record.budget = NSString(string: (cells[4] as String)).doubleValue
-			record.runningTime = (cells[5] as String).toInt() ?? 0
+			record.recordId = (cells[0] as! String).toInt() ?? 0
+			record.name = cells[1] as! String
+			record.released = (cells[2] as! String).toInt() ?? 0
+			record.directorsWriters = cells[3] as! String
+			record.budget = NSString(string: (cells[4] as! String)).doubleValue
+			record.runningTime = (cells[5] as! String).toInt() ?? 0
 			records.append(record)
 		}
 		

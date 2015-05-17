@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 		textField.becomeFirstResponder()
 	}
 
-	func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
+	func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
 		if let originalText : NSString = textField.text {
 			let newText = originalText.stringByReplacingCharactersInRange(range, withString: string)
 			updateColorForText(newText)
