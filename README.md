@@ -108,10 +108,11 @@ The coloring are like this:
 You find this in the Basic_iOS project in the Examples folder.
 
 
-## Contributing
+## Simon Strandgaard's App Projects
 
-1. Fork it
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create new Pull Request
+1. [Triangle Draw](http://www.triangledraw.com/)
+2. [Colorblind Vision](https://itunes.apple.com/dk/app/colorblind-vision/id401516863?mt=8)
+3. [Newton Commander](https://github.com/neoneye/newton-commander)
+4. [GraphToy](https://github.com/neoneye/GraphToy)
+5. [GraphicDesignerToolbox](http://graphicdesignertoolbox.com/)
+6. [AEditor](https://github.com/neoneye/aeditor)
