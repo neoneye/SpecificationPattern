@@ -9,8 +9,9 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 
 ## Requirements
 
-- Xcode 6.1
-- iOS 7.0+ / Mac OS X 10.9+
+- Xcode 7.0 beta
+- Swift 2
+- iOS 9.0+ / Mac OS X 10.10+
 
 
 ## Usage
