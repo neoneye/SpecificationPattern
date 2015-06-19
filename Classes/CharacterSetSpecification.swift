@@ -1,90 +1,90 @@
 import Foundation
 
-class CharacterSetSpecification: CompositeSpecification {
-	let characterSet: NSCharacterSet
+public class CharacterSetSpecification: CompositeSpecification {
+	public let characterSet: NSCharacterSet
 	
 	init(characterSet: NSCharacterSet) {
 		self.characterSet = characterSet
 		super.init()
 	}
 	
-	class func charactersInString(charactersInString: String) -> CharacterSetSpecification {
+	public class func charactersInString(charactersInString: String) -> CharacterSetSpecification {
 		let cs = NSCharacterSet(charactersInString: charactersInString)
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func controlCharacterSet() -> CharacterSetSpecification {
+	public class func controlCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.controlCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func whitespaceCharacterSet() -> CharacterSetSpecification {
+	public class func whitespaceCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.whitespaceCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 
-	class func whitespaceAndNewlineCharacterSet() -> CharacterSetSpecification {
+	public class func whitespaceAndNewlineCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.whitespaceAndNewlineCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func decimalDigitCharacterSet() -> CharacterSetSpecification {
+	public class func decimalDigitCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.decimalDigitCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 
-	class func lowercaseLetterCharacterSet() -> CharacterSetSpecification {
+	public class func lowercaseLetterCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.lowercaseLetterCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func uppercaseLetterCharacterSet() -> CharacterSetSpecification {
+	public class func uppercaseLetterCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.uppercaseLetterCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func nonBaseCharacterSet() -> CharacterSetSpecification {
+	public class func nonBaseCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.nonBaseCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func alphanumericCharacterSet() -> CharacterSetSpecification {
+	public class func alphanumericCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.alphanumericCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func decomposableCharacterSet() -> CharacterSetSpecification {
+	public class func decomposableCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.decomposableCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func illegalCharacterSet() -> CharacterSetSpecification {
+	public class func illegalCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.illegalCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func punctuationCharacterSet() -> CharacterSetSpecification {
+	public class func punctuationCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.punctuationCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func capitalizedLetterCharacterSet() -> CharacterSetSpecification {
+	public class func capitalizedLetterCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.capitalizedLetterCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func symbolCharacterSet() -> CharacterSetSpecification {
+	public class func symbolCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.symbolCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 	
-	class func newlineCharacterSet() -> CharacterSetSpecification {
+	public class func newlineCharacterSet() -> CharacterSetSpecification {
 		let cs = NSCharacterSet.newlineCharacterSet()
 		return CharacterSetSpecification(characterSet: cs)
 	}
 
 	
-	override func isSatisfiedBy(candidate: Any?) -> Bool {
+	public override func isSatisfiedBy(candidate: Any?) -> Bool {
 		guard let fullString = candidate as? String else { return false }
 		for character: Character in fullString.characters {
 			let range: Range<String.Index>? =

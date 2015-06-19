@@ -1,37 +1,37 @@
 import Foundation
 
-class CountSpecification: CompositeSpecification {
+public class CountSpecification: CompositeSpecification {
 	
-	class func min(count: Int) -> CountSpecification {
+	public class func min(count: Int) -> CountSpecification {
 		return CountSpecification().min(count)
 	}
 	
-	class func max(count: Int) -> CountSpecification {
+	public class func max(count: Int) -> CountSpecification {
 		return CountSpecification().max(count)
 	}
 	
-	class func between(minCount: Int, _ maxCount: Int) -> CountSpecification {
+	public class func between(minCount: Int, _ maxCount: Int) -> CountSpecification {
 		return CountSpecification().min(minCount).max(maxCount)
 	}
 	
-	class func exactly(count: Int) -> CountSpecification {
+	public class func exactly(count: Int) -> CountSpecification {
 		return CountSpecification().min(count).max(count)
 	}
 	
-	var minCount: Int?
-	var maxCount: Int?
+	public var minCount: Int?
+	public var maxCount: Int?
 	
-	func min(count: Int) -> CountSpecification {
+	public func min(count: Int) -> CountSpecification {
 		minCount = count
 		return self
 	}
 	
-	func max(count: Int) -> CountSpecification {
+	public func max(count: Int) -> CountSpecification {
 		maxCount = count
 		return self
 	}
 	
-	override func isSatisfiedBy(candidate: Any?) -> Bool {
+	public override func isSatisfiedBy(candidate: Any?) -> Bool {
 		if candidate == nil {
 			return false
 		}

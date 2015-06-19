@@ -1,7 +1,7 @@
 import Foundation
 
-class RegularExpressionSpecification: CompositeSpecification {
-	let regularExpression: NSRegularExpression
+public class RegularExpressionSpecification: CompositeSpecification {
+	public let regularExpression: NSRegularExpression
 	
 	init(regularExpression: NSRegularExpression) {
 		self.regularExpression = regularExpression
@@ -13,7 +13,7 @@ class RegularExpressionSpecification: CompositeSpecification {
 		self.init(regularExpression: regularExpression)
 	}
 	
-	override func isSatisfiedBy(candidate: Any?) -> Bool {
+	public override func isSatisfiedBy(candidate: Any?) -> Bool {
 		guard let s = candidate as? String else { return false }
 		return regularExpression.numberOfMatchesInString(s, options: [], range: NSMakeRange(0, s.characters.count)) > 0
 	}
