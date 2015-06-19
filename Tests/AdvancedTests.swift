@@ -74,23 +74,23 @@ class AdvancedTests: XCTestCase {
 		// Read a CSV file
 		let path = NSBundle(forClass: self.dynamicType).pathForResource("alien", ofType: "csv")
 		assert(path != nil)
-		let dataString = NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)
+		let dataString = try! NSString(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
 
 		// Split CSV data into rows and fields
-		let rows = dataString!.componentsSeparatedByString("\n")
+		let rows = dataString.componentsSeparatedByString("\n")
 		var records: [MovieRecord] = []
 		for row in rows {
 			let cells = row.componentsSeparatedByString(";")
 			assert(cells.count == 6)
 			
 			// Create record populated with CSV data
-			var record: MovieRecord = MovieRecord()
-			record.recordId = (cells[0] as! String).toInt() ?? 0
-			record.name = cells[1] as! String
-			record.released = (cells[2] as! String).toInt() ?? 0
-			record.directorsWriters = cells[3] as! String
-			record.budget = NSString(string: (cells[4] as! String)).doubleValue
-			record.runningTime = (cells[5] as! String).toInt() ?? 0
+			let record: MovieRecord = MovieRecord()
+			record.recordId = Int((cells[0] as String)) ?? 0
+			record.name = cells[1] as String
+			record.released = Int((cells[2] as String)) ?? 0
+			record.directorsWriters = cells[3] as String
+			record.budget = NSString(string: (cells[4] as String)).doubleValue
+			record.runningTime = Int((cells[5] as String)) ?? 0
 			records.append(record)
 		}
 		

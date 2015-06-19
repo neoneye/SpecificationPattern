@@ -37,15 +37,15 @@ class CountSpecification: CompositeSpecification {
 		}
 
 		var n: Int = 0
-		do {
+		repeat {
 			if let x = candidate as? String {
-				n = count(x)
+				n = x.characters.count
 				break
 			}
 			
 			// Obtain length of Array, see http://stackoverflow.com/a/25901509/78336
 			if let y = candidate as? NSArray {
-				n = count(y as Array)
+				n = (y as Array).count
 				break
 			}
 			

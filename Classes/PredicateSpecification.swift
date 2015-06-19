@@ -9,9 +9,7 @@ class PredicateSpecification<T>: CompositeSpecification {
 	}
 	
 	override func isSatisfiedBy(candidate: Any?) -> Bool {
-		if let obj = candidate as? T {
-			return predicate(obj)
-		}
-		return false
+		guard let obj = candidate as? T else { return false }
+		return predicate(obj)
 	}
 }

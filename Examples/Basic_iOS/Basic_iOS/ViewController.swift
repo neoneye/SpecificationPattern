@@ -12,8 +12,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             
 	@IBOutlet weak var textField : UITextField!
 	
-	var validSpecification : Specification
-	var partialSpecification : Specification
+	let validSpecification : Specification
+	let partialSpecification : Specification
 	
 	required init(coder aDecoder: NSCoder) {
 		validSpecification = ViewController.createValidSpecification()
