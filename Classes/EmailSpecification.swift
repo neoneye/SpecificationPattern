@@ -14,7 +14,7 @@ http://en.wikipedia.org/wiki/Email_address
 public class EmailSpecification: CompositeSpecification {
 	private let specification: RegularExpressionSpecification
 	
-	override init() {
+	public override init() {
 		self.specification = RegularExpressionSpecification(pattern: emailRegularExpression)
 		super.init()
 	}
