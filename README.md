@@ -89,10 +89,8 @@ let inCollection = InCollectionSpecification()
 let sendToCollection = overDue & noticeSent & !inCollection
 
 let invoiceCollection = Service.invoices()
-for invoice in invoiceCollection {
-    if sendToCollection.isSatisfiedBy(invoice) {
-        invoice.sendToCollection()
-    }
+for invoice in invoiceCollection where sendToCollection == invoice {
+    invoice.sendToCollection()
 }
 ```
 
