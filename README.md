@@ -86,10 +86,9 @@ let noticeSent = NoticeSentSpecification()
 let inCollection = InCollectionSpecification()
 
 // example of specification pattern logic chaining
-let sendToCollection = overDue & noticeSent & !inCollection
+let spec = overDue & noticeSent & !inCollection
 
-let invoiceCollection = Service.invoices()
-for invoice in invoiceCollection where sendToCollection == invoice {
+for invoice in Service.invoices() where spec == invoice {
     invoice.sendToCollection()
 }
 ```
