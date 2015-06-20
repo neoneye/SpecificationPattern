@@ -108,9 +108,10 @@ You find this in the Basic_iOS project in the Examples folder.
 
 ## Simon Strandgaard's App Projects
 
-1. [Triangle Draw](http://www.triangledraw.com/) - A simple yet powerful drawing app for iOS.
-2. [Colorblind Vision](https://itunes.apple.com/dk/app/colorblind-vision/id401516863?mt=8) - An app that processes live video and presents it as a colorblind person would see it, for iOS. 
-3. [Newton Commander](https://github.com/neoneye/newton-commander) - An advanced file manager for Mac.
-4. [GraphToy](https://github.com/neoneye/GraphToy) - A werkkzeug inspired tool for iPad.
-5. [GraphicDesignerToolbox](http://graphicdesignertoolbox.com/) - A werkkzeug inspired tool for Mac.
-6. [AEditor](https://github.com/neoneye/aeditor) - A programming editor for Mac/Windows/Linux.
+1. [SwiftyFORM](https://github.com/neoneye/SwiftyFORM) - A framework that makes it easier creating forms for iOS.
+2. [Triangle Draw](http://www.triangledraw.com/) - A simple yet powerful drawing app for iOS.
+3. [Colorblind Vision](https://itunes.apple.com/dk/app/colorblind-vision/id401516863?mt=8) - An app that processes live video and presents it as a colorblind person would see it, for iOS. 
+4. [Newton Commander](https://github.com/neoneye/newton-commander) - An advanced file manager for Mac.
+5. [GraphToy](https://github.com/neoneye/GraphToy) - A werkkzeug inspired tool for iPad.
+6. [GraphicDesignerToolbox](http://graphicdesignertoolbox.com/) - A werkkzeug inspired tool for Mac.
+7. [AEditor](https://github.com/neoneye/aeditor) - A programming editor for Mac/Windows/Linux.
