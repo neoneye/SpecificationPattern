@@ -9,7 +9,7 @@ The **Specification** design pattern implemented in swift for iOS/OSX.
 
 ## Requirements
 
-- Xcode 7.0 beta
+- Xcode 7.0 beta 4 (7A165t)
 - Swift 2
 - iOS 9.0+ / Mac OS X 10.10+
 
